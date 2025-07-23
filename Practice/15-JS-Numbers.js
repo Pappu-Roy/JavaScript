@@ -45,29 +45,29 @@ console.log(x+z); // Output: "1050" (string concatenation, not addition)
 console.log(10/"two"); // Output: NaN (Not a Number, invalid operation)
 console.log(typeof (10/"two")); // Output: number (type of NaN is number)
 
-console.log(2/0);
+console.log(2/0); // Output: Infinity (division by zero) 
 
 x = 999999999999999; 
 console.log(x);
-y = 9999999999999999;
-console.log(y);
+y = 9999999999999999; 
+console.log(y); // Output: 10000000000000000 (precision lost, JS converts to scientific notation)
 
-y = 9999999999999999n;
+y = 9999999999999999n; // Using BigInt for large integers
 console.log(y);
-console.log(typeof y);
+console.log(typeof y); // Output: bigint (type of BigInt is bigint)
 
-y = BigInt("1234567890123456789012345")
+y = BigInt("1234567890123456789012345")  // Large integer using BigInt
 console.log(y);
 console.log(typeof y);
 
 x = 9007199254740995n;
 y = 9007199254740995n;
-z = x * y;
+z = x * y;                // Multiplying two BigInts
 console.log(z);
 
-let hex = 0x20000000000003n;
-let oct = 0o400000000000000003n;
-let bin = 0b100000000000000000000000000000000000000000000000000011n;
+let hex = 0x20000000000003n;  // Hexadecimal BigInt
+let oct = 0o400000000000000003n;  // Octal BigInt
+let bin = 0b100000000000000000000000000000000000000000000000000011n;  // Binary BigInt
 console.log(hex);
 console.log(oct);
 console.log(bin);
@@ -75,5 +75,5 @@ console.log(bin);
 // !A safe integer is an integer that can be exactly represented as a double precision number.
 //The Number.isSafeInteger() method returns true if the argument is a safe integer.
 
-console.log(Number.isSafeInteger(10));
-console.log(Number.isSafeInteger(12345678901234567890));
+console.log(Number.isSafeInteger(10));  // Output: true
+console.log(Number.isSafeInteger(12345678901234567890)); // Output: false
