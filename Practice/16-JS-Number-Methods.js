@@ -77,5 +77,25 @@ console.log(Number.isSafeInteger(123)); // Check if Number is Safe Integer // tr
 console.log(Number.isSafeInteger(9007199254740991)); // Check if Large Number is Safe Integer // true
 console.log(Number.isSafeInteger(9007199254740992)); // Check if Larger Number is Safe Integer // false
 
+// Number.MAX_SAFE_INTEGER and Number.MIN_SAFE_INTEGER
+console.log("MAX_SAFE_INTEGER and MIN_SAFE_INTEGER:");
+console.log(Number.MAX_SAFE_INTEGER); // Maximum Safe Integer
+console.log(Number.MIN_SAFE_INTEGER); // Minimum Safe Integer
+
+// Number.EPSILON
+console.log("Number.EPSILON:");
+console.log(Number.EPSILON); // Smallest difference between two representable numbers
+
+// Min and Max values
+console.log("Min and Max values:");
+console.log(Number.MIN_VALUE); // Smallest positive number representable in JavaScript
+console.log(Number.MAX_VALUE); // Largest positive number representable in JavaScript
+
+// Number.POSITIVE_INFINITY and Number.NEGATIVE_INFINITY
+console.log("POSITIVE_INFINITY and NEGATIVE_INFINITY:");
+console.log(Number.POSITIVE_INFINITY); // Positive Infinity
+console.log(Number.NEGATIVE_INFINITY); // Negative Infinity
+
+
 
 
