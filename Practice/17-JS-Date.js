@@ -57,3 +57,25 @@ const dt = new Date("2021-03-25");
 let month = months[dt.getMonth()];
 console.log(month); // Get Month Name from Array
 console.log(dt.getUTCMonth()); // Get UTC Month (0-11)
+
+// Date Set Methods
+console.log("Date Set Methods:");
+date = new Date("2022-05-25T10:20:30Z");
+date.setFullYear(2023); // Set Full Year
+console.log(date); // Updated Date
+date.setMonth(11); // Set Month (0-11)
+console.log(date); // Updated Date
+date.setDate(15); // Set Day of Month (1-31)
+console.log(date); // Updated Date
+date.setHours(14); // Set Hours (0-23)
+console.log(date); // Updated Date
+date.setMinutes(45); // Set Minutes (0-59)
+console.log(date); // Updated Date
+date.setSeconds(30); // Set Seconds (0-59)
+console.log(date); // Updated Date
+date.setMilliseconds(500); // Set Milliseconds (0-999)
+console.log(date); // Updated Date
+date.setTime(1696118400000); // Set Time in Milliseconds since Epoch
+console.log(date); // Updated Date
+date.setUTCFullYear(2024); // Set UTC Full Year
+console.log(date); // Updated Date
